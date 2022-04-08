@@ -10,7 +10,7 @@ public class JokeController {
 
     private final JokeService jokeService;
 
-    @GetMapping("https://norrisapp71.herokuapp.com/joke")
+    @GetMapping("/joke")
     public JokeTrueDto getJoke(){
         return jokeService.getJoke();
     }
