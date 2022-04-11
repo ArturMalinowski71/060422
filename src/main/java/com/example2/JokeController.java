@@ -11,7 +11,7 @@ public class JokeController {
 
     private final JokeService jokeService;
 
-    @CrossOrigin(origins = "https://norrisapp71.herokuapp.com/joke")
+    @CrossOrigin
     @GetMapping("/joke")
     public JokeTrueDto getJoke(){
         return jokeService.getJoke();
