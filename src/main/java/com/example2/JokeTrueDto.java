@@ -8,7 +8,6 @@ import lombok.Setter;
 @Setter
 @Builder
 public class JokeTrueDto {
-    private String id;
     private String value;
     private String created_at;
     private String icon_url;

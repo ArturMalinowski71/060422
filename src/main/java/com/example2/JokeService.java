@@ -13,7 +13,6 @@ public class JokeService {
     public JokeTrueDto getJoke(){
         JokeDto response = restTemplate.getForObject("https://api.chucknorris.io/jokes/random",JokeDto.class);
         return JokeTrueDto.builder()
-                .id(response.getId())
                 .icon_url(response.getIcon_url())
                 .value(response.getValue())
                 .created_at(response.getCreated_at())
